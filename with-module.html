@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>With Module</title>
-    <script type="module" src="scripts/say.js"></script>
+    <!-- <script type="module" src="scripts/say.js"></script> -->
 </head>
 <body>
-<script>
+<script type="module">
+    import {sayHello, sayGoodBye, name} from './scripts/say.js';
+
     sayHello("Roziqin");
     sayGoodBye("Roziqin");
 
