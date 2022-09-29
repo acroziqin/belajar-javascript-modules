@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Object</title>
+</head>
+
+<body>
+    <script type="module">
+        // import {firstName, middleName, lastName, hello, Person} from './scripts/module-object.js';
+        import * as roziqin from './scripts/module-object.js';
+
+        console.info(roziqin.firstName);
+        console.info(roziqin.middleName);
+        console.info(roziqin.lastName);
+        
+        roziqin.hello()
+
+        const person = new roziqin.Person();
+
+    </script>
+</body>
+
+</html>
